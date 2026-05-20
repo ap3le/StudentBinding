@@ -35,7 +35,7 @@ namespace StudentBinding
         {
             InitializeComponent();
             student1= new Student("Daniel","Mizrahi","daniel123@gmail.com","daniel.png",new DateTime (2007,9,11),"050-1234567");
-            student2= new Student("Noa","Ashkenazi","noal123@gmail.com","noa.png",new DateTime (2008,8,5),"050-9876543");
+            student2= new Student("Noa","Ashkenazi","noa123@gmail.com","noa.png",new DateTime (2008,8,5),"050-67676767");
 
             DisplayedStudent=student1;
             this.BindingContext=this;

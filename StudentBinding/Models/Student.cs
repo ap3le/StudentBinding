@@ -12,6 +12,8 @@ public class Student : ObservableObject
 
     private string phone;
 
+    private string fullName;
+
     public Student(string name, string surname, string email, string profilePicture, DateTime dateOfBirth, string phone)
     {
         Name = name;
@@ -59,6 +61,11 @@ public class Student : ObservableObject
             int age_student = DateTime.Now.Subtract(dateOfBirth).Days / 365;
             return age_student;
         }
+    }
+
+    public string FullName
+    {
+        get { return $"{Name} {Surname}"; }
     }
 
     public string Email

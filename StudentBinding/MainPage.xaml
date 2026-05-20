@@ -21,7 +21,7 @@
                 HorizontalOptions="Center"
                 HorizontalTextAlignment="Center"
                 SemanticProperties.HeadingLevel="Level1"
-                Text="{Binding DisplayedStudent.Name}"
+                Text="{Binding DisplayedStudent.FullName}"
                 TextColor="MidnightBlue" />
 
             <!--  גיל  -->
@@ -37,6 +37,7 @@
             <!--  תאריך לידה  -->
             <DatePicker
                 Date="{Binding DisplayedStudent.DateOfBirth}"
+                IsEnabled="False"
                 FontSize="24"
                 HorizontalOptions="Center"
                 SemanticProperties.Description="Student birth date"
