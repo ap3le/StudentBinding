@@ -31,6 +31,7 @@ public class Student : ObservableObject
         {
             name = value;
             OnPropertyChanged(nameof(Name));
+            OnPropertyChanged(nameof(FullName));
         }
     }
 
@@ -51,6 +52,7 @@ public class Student : ObservableObject
         {
             surname = value;
             OnPropertyChanged(nameof(Surname));
+            OnPropertyChanged(nameof(FullName));
         }
     }
 

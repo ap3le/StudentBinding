@@ -17,7 +17,7 @@ namespace StudentBinding
             set
             {
                 newDate = value;
-                OnPropertyChanged();
+                OnPropertyChanged(nameof(NewDate));
             }
         }
 
@@ -27,7 +27,7 @@ namespace StudentBinding
             set
             {
                 displayedStudent = value;
-                OnPropertyChanged();
+                OnPropertyChanged(nameof(DisplayedStudent));
             }
         }
 
