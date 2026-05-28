@@ -1,8 +1,9 @@
-﻿using StudentBinding.Models;
+using StudentBinding;
+using StudentBinding.Models;
 
-namespace StudentBinding
+namespace StudentBinding.ViewModels
 {
-    public partial class MainPage : ContentPage
+    internal class MainPageViewModels : ObservableObject
     {
         private Student student1;
         private Student student2;
@@ -31,35 +32,16 @@ namespace StudentBinding
             }
         }
 
-        public MainPage()
+        public MainPageViewModels()
         {
-            InitializeComponent();
             student1= new Student("Daniel","Mizrahi","daniel123@gmail.com","daniel.png",new DateTime (2007,9,11),"050-1234567");
             student2= new Student("Noa","Ashkenazi","noa123@gmail.com","noa.png",new DateTime (2008,8,5),"050-67676767");
 
             DisplayedStudent=student1;
-            this.BindingContext=this;
 
             
         }
 
-        private void ChangeStudent_Clicked(object sender, EventArgs e)
-        {
-            if (DisplayedStudent == student1)
-            {
-                DisplayedStudent = student2;
-
-            }
-            else
-            {
-                DisplayedStudent = student1;
-            }
-        }
-
-        private void UpdateBirthDate_Clicked(object sender, EventArgs e)
-        {
-            DisplayedStudent.DateOfBirth = NewDate;
-        }
-
+        
     }
 }
