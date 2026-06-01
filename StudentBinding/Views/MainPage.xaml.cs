@@ -1,7 +1,7 @@
 ﻿using StudentBinding.Models;
 using StudentBinding.ViewModels;
 
-namespace StudentBinding.Views;
+namespace StudentBinding.Views
 {
     public partial class MainPage : ContentPage
     {
@@ -14,23 +14,7 @@ namespace StudentBinding.Views;
             
         }
 
-        private void ChangeStudent_Clicked(object sender, EventArgs e)
-        {
-            // if (DisplayedStudent == student1)
-            // {
-            //     DisplayedStudent = student2;
-
-            // }
-            // else
-            // {
-            //     DisplayedStudent = student1;
-            // }
-        }
-
-        private void UpdateBirthDate_Clicked(object sender, EventArgs e)
-        {
-            // DisplayedStudent.DateOfBirth = NewDate;
-        }
+        
 
     }
 }

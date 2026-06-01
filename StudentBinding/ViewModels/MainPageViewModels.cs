@@ -1,3 +1,4 @@
+using System.Windows.Input;
 using StudentBinding;
 using StudentBinding.Models;
 
@@ -40,6 +41,28 @@ namespace StudentBinding.ViewModels
             DisplayedStudent=student1;
 
             
+        }
+
+        public ICommand SwitchStudentCommand { get; private set; }
+
+        private void SwitchStudent()
+        {
+            if (DisplayedStudent == student1)
+            {
+                DisplayedStudent = student2;
+
+            }
+            else
+            {
+                DisplayedStudent = student1;
+            }
+        }
+
+        public ICommand UpdateBirthDateCommand { get; private set; }
+
+        private void UpdateBirthDate()
+        {
+            DisplayedStudent.DateOfBirth = NewDate;
         }
 
         
