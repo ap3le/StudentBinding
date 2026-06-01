@@ -39,6 +39,8 @@ namespace StudentBinding.ViewModels
             student2= new Student("Noa","Ashkenazi","noa123@gmail.com","noa.png",new DateTime (2008,8,5),"050-67676767");
 
             DisplayedStudent=student1;
+            SwitchStudentCommand = new Command(SwitchStudent);
+            UpdateBirthDateCommand = new Command(UpdateBirthDate);
 
             
         }
